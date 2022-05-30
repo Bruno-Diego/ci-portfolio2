@@ -127,6 +127,42 @@ function onSnake(position, { ignoreHead = false } = {}) {
 
 
   
+// Functions for the snake's food
+
+/**
+ * Update the snake based on the expansion rate and get a new position for the food 
+ */
+function updateFood() {
+    if (onSnake(food)) {
+      expandSnake(EXPANSION_RATE)
+      food = getRandomFoodPosition()
+    }
+  }
+  
+  /**
+   * Draw the food on the screen based with the update loop
+   * 
+   */
+  function drawFood(gameBoard) {
+    const foodElement = document.createElement('div')
+    foodElement.style.gridRowStart = food.y
+    foodElement.style.gridColumnStart = food.x
+    foodElement.classList.add('food')
+    gameBoard.appendChild(foodElement)
+  }
+  
+  /**
+   * Get a random position to get the food
+   * that is not on the body of the snake
+   */
+  function getRandomFoodPosition() {
+    let newFoodPosition
+    while (newFoodPosition == null || onSnake(newFoodPosition)) {
+      newFoodPosition = randomGridPosition()
+    }
+    return newFoodPosition
+  }
+  
 // Functions to create a random position for the food
 //size of the game
 const GRID_SIZE = 20
