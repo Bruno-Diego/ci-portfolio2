@@ -10,6 +10,10 @@ let newSegments = 0
 //initial position reference for user input
 let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
+//Starts the food on a random position
+let food = getRandomFoodPosition()
+//Rate the snake grows when it eats the food
+const EXPANSION_RATE = 1
 
 // Main game functions
 
@@ -103,3 +107,46 @@ function drawSnake(gameBoard) {
   function expandSnake(amount) {
     newSegments += amount
   }
+  
+/**
+ * Get the position of the food and compare with the snake segments
+ * 
+ */
+function onSnake(position, { ignoreHead = false } = {}) {
+    return snakeBody.some((segment, index) => {
+        //ignores if the snake head is on the snake head
+      if (ignoreHead && index === 0) return false
+      return equalPositions(segment, position)
+    })
+  }
+
+
+
+
+
+
+
+  
+// Functions to create a random position for the food
+//size of the game
+const GRID_SIZE = 20
+/**
+ * Gives a random position inside the grid
+ */
+function randomGridPosition() {
+  return {
+    x: Math.floor(Math.random() * 21) + 1,
+    y: Math.floor(Math.random() * 21) + 1
+  }
+}
+/**
+ * Return true or false if the element is outside the grid
+ */
+function outsideGrid(position) {
+  return (
+    position.x < 1 || position.x > GRID_SIZE ||
+    position.y < 1 || position.y > GRID_SIZE
+  )
+}
+
+  
