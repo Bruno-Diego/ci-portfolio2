@@ -4,6 +4,12 @@ let lastRenderTime = 0
 const gameBoard = document.getElementById('game-board')
 //Snake variables
 const SNAKE_SPEED = 5
+//initial position for the snake
+const snakeBody = [{ x: 11, y: 11 }]
+let newSegments = 0
+//initial position reference for user input
+let inputDirection = { x: 0, y: 0 }
+let lastInputDirection = { x: 0, y: 0 }
 
 // Main game functions
 
@@ -55,4 +61,23 @@ function draw() {
  */
  function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+  }
+
+  
+// Functions for the snake
+
+/**
+ * updates the position of the snake and the directions to move
+ */
+function updateSnake() {
+    addSegments()
+  
+    const inputDirection = getInputDirection()
+    //update every segment except the last one
+    for (let i = snakeBody.length - 2; i >= 0; i--) {
+      snakeBody[i + 1] = { ...snakeBody[i] }
+    }
+  
+    snakeBody[0].x += inputDirection.x
+    snakeBody[0].y += inputDirection.y
   }
