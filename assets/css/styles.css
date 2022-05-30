@@ -33,3 +33,25 @@ main, .instructions {
     color: #f5f5f5;
   }
 
+.game-board {
+    background-color: #D6F8A0;
+    width: 50vmin;
+    height: 50vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+    border-style: dashed;
+    border-color: #000000;
+  }
+
+  .snake {
+    background-color: #3C533F;
+    border: .25vmin solid #23260c;
+  }
+  
+  .food {
+    background-color: #ff0000;
+    border: .25vmin solid #ff4800;
+    border-radius: 50%;
+  }
+  
