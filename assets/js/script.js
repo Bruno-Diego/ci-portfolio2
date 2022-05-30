@@ -81,3 +81,25 @@ function updateSnake() {
     snakeBody[0].x += inputDirection.x
     snakeBody[0].y += inputDirection.y
   }
+
+  
+/**
+ * Draws the snake after update the position
+ */
+function drawSnake(gameBoard) {
+    snakeBody.forEach(segment => {
+      const snakeElement = document.createElement('div')
+      snakeElement.style.gridRowStart = segment.y
+      snakeElement.style.gridColumnStart = segment.x
+      snakeElement.classList.add('snake')
+      gameBoard.appendChild(snakeElement)
+    })
+  }
+  
+  /**
+   * Get a number of how much to expand the snake
+   * increase the segment
+   */
+  function expandSnake(amount) {
+    newSegments += amount
+  }
