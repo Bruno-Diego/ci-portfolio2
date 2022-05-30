@@ -1,6 +1,9 @@
 //Main game variables
 let gameOver = false
 let lastRenderTime = 0
+const gameBoard = document.getElementById('game-board')
+//Snake variables
+const SNAKE_SPEED = 5
 
 // Main game functions
 
@@ -25,4 +28,23 @@ function main(currentTime) {
 
     update()
     draw()
+}
+
+window.requestAnimationFrame(main)
+/**
+ * Moves the snake to the correct position but doesnt draw it
+ * also says when the game is lost
+ */
+function update() {
+  updateSnake()
+  updateFood()
+  checkDeath()
+}
+/**
+ * Clear the previous segments and draw the new ones
+ */
+function draw() {
+  gameBoard.innerHTML = ''
+  drawSnake(gameBoard)
+  drawFood(gameBoard)
 }
