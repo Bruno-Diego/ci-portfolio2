@@ -7,31 +7,32 @@ body {
     align-items: center;
     margin: 0;
     background-color: #23260c;
-  }
-  
-main, .instructions {
+}
+
+main,
+.instructions {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .instructions {
+}
+
+.instructions {
     text-align: center;
     padding: 0 10vw;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 150%;
     font-family: 'Raleway', sans-serif;
     color: #f5f5f5;
     text-align: center;
-  }
-  
-  p {
+}
+
+p {
     font-family: 'Raleway', sans-serif;
     color: #f5f5f5;
-  }
+}
 
 .game-board {
     background-color: #D6F8A0;
@@ -42,16 +43,54 @@ main, .instructions {
     grid-template-columns: repeat(21, 1fr);
     border-style: dashed;
     border-color: #000000;
-  }
+}
 
-  .snake {
+.snake {
     background-color: #3C533F;
     border: .25vmin solid #23260c;
-  }
-  
-  .food {
+}
+
+.food {
     background-color: #ff0000;
     border: .25vmin solid #ff4800;
     border-radius: 50%;
-  }
-  
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 1vw;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    color: #f5f5f5;
+    padding: 4vw;
+    font-size: 140%;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    vertical-align: middle
+}
+
+i:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 20vh 20vh #03f74c91;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
