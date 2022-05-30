@@ -48,3 +48,11 @@ function draw() {
   drawSnake(gameBoard)
   drawFood(gameBoard)
 }
+
+/**
+ * Check a failure.
+ * Failure happens if the snake get out of the grid or touch itself
+ */
+ function checkDeath() {
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+  }
