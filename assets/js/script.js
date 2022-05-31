@@ -1,24 +1,16 @@
+
 //Main game variables
 let gameOver = false
 let lastRenderTime = 0
-const gameBoard = document.getElementById('game-board')
+const gameBoard = document.getElementsByClassName('game-board')[0]
 //Snake variables
 const SNAKE_SPEED = 5
 //initial position for the snake
-const snakeBody = [{
-    x: 11,
-    y: 11
-}]
+const snakeBody = [{ x: 11, y: 11 }]
 let newSegments = 0
 //initial position reference for user input
-let inputDirection = {
-    x: 0,
-    y: 0
-}
-let lastInputDirection = {
-    x: 0,
-    y: 0
-}
+let inputDirection = { x: 0, y: 0 }
+let lastInputDirection = { x: 0, y: 0 }
 //Starts the food on a random position
 let food = getRandomFoodPosition()
 //Rate the snake grows when it eats the food
@@ -103,10 +95,12 @@ function updateSnake() {
  */
 function drawSnake(gameBoard) {
     snakeBody.forEach(segment => {
+        
         const snakeElement = document.createElement('div')
         snakeElement.style.gridRowStart = segment.y
         snakeElement.style.gridColumnStart = segment.x
         snakeElement.classList.add('snake')
+        console.log(gameBoard)
         gameBoard.appendChild(snakeElement)
     })
 }
