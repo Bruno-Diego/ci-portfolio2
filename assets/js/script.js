@@ -15,7 +15,9 @@ let lastInputDirection = { x: 0, y: 0 }
 let food = getRandomFoodPosition()
 //Rate the snake grows when it eats the food
 const EXPANSION_RATE = 1
-
+//Score counter
+const getScore = document.getElementsByClassName('score')[0]
+let score = 0
 // Main game functions
 
 /**
@@ -47,6 +49,7 @@ window.requestAnimationFrame(main)
  * also says when the game is lost
  */
 function update() {
+    getScore.innerHTML = score
     updateSnake()
     updateFood()
     checkDeath()
@@ -76,7 +79,6 @@ function checkDeath() {
  */
 function updateSnake() {
     addSegments()
-
     const inputDirection = getInputDirection()
     //update every segment except the last one
     for (let i = snakeBody.length - 2; i >= 0; i--) {
@@ -100,7 +102,6 @@ function drawSnake(gameBoard) {
         snakeElement.style.gridRowStart = segment.y
         snakeElement.style.gridColumnStart = segment.x
         snakeElement.classList.add('snake')
-        console.log(gameBoard)
         gameBoard.appendChild(snakeElement)
     })
 }
@@ -211,11 +212,12 @@ function getInputDirection() {
 // Functions for the snake's food
 
 /**
- * Update the snake based on the expansion rate and get a new position for the food 
+ * Update the snake and score based on the expansion rate and get a new position for the food 
  */
 function updateFood() {
     if (onSnake(food)) {
         expandSnake(EXPANSION_RATE)
+        score++
         food = getRandomFoodPosition()
     }
 }
