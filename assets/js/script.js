@@ -3,8 +3,10 @@
 let gameOver = false
 let lastRenderTime = 0
 const gameBoard = document.getElementsByClassName('game-board')[0]
+
 //Snake variables
-const SNAKE_SPEED = 5
+//Snake speed selected by user
+const SNAKE_SPEED = () => document.querySelector('input[name="toggle"]:checked').value
 //initial position for the snake
 const snakeBody = [{ x: 11, y: 11 }]
 let newSegments = 0
@@ -18,6 +20,8 @@ const EXPANSION_RATE = 1
 //Score counter
 const getScore = document.getElementsByClassName('score')[0]
 let score = 0
+
+
 // Main game functions
 
 /**
@@ -35,10 +39,10 @@ function main(currentTime) {
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
     //updates based on the snake speed
-    if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
+    if (secondsSinceLastRender < 1 / SNAKE_SPEED()) return
 
     lastRenderTime = currentTime
-
+    
     update()
     draw()
 }

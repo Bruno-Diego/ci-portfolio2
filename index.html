@@ -22,7 +22,16 @@
                 (red circle) using the arrow keys in your keyboard!</p>
             <p>Start the game pressing any direction and try to eat as many apples as you can without 
                 hitting the dashed border of the game area or your own body because if you do, the game is OVER!</p>
-            <p>Thanks for playing!</p>
+            <p>Select the speed of the snake clicking below:</p>
+            <form class="choose-speed">
+                <input class="speed slow" type="radio" name="toggle" id="slow" value="5" checked />
+                <label class="speed-choice" for="slow">SLOW</label>
+                <input class="speed average" type="radio" name="toggle" id="average" value="10" />
+                <label class="speed-choice" for="average">AVERAGE</label>
+                <input class="speed fast" type="radio" name="toggle" id="fast" value="15" />
+                <label class="speed-choice" for="fast">FAST</label>
+            </form>
+            <br>
             <p>Enjoy!</p>
             <p>Score: <span class="score"></span></p>
        </div>
