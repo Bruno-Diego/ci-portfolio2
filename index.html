@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- Font Awesome and Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-    crossorigin="anonymous"/>    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <title>Snake Game</title>
 </head>
+
 <body>
     <header>
         <h1>CI SNAKE GAME</h1>
@@ -18,39 +21,76 @@
     <main>
         <!-- Instructions about how to start playing the game -->
         <div class="instructions">
-            <p>Welcome to my Snake Game! In this game you control a Snake (green square) searching for apples 
+            <p>Welcome to my Snake Game! In this game you control a Snake (green square) searching for apples
                 (red circle) using the arrow keys in your keyboard!</p>
-            <p>Start the game pressing any direction and try to eat as many apples as you can without 
+            <p>Start the game pressing any direction and try to eat as many apples as you can without
                 hitting the dashed border of the game area or your own body because if you do, the game is OVER!</p>
             <p>Select the speed of the snake clicking below:</p>
             <form class="choose-speed">
-                <input class="speed slow" type="radio" name="toggle" id="slow" value="5" checked />
+                <input class="speed" type="radio" name="toggle" id="slow" value="5" checked />
                 <label class="speed-choice" for="slow">SLOW</label>
-                <input class="speed average" type="radio" name="toggle" id="average" value="10" />
+                <input class="speed" type="radio" name="toggle" id="average" value="10" />
                 <label class="speed-choice" for="average">AVERAGE</label>
-                <input class="speed fast" type="radio" name="toggle" id="fast" value="15" />
+                <input class="speed" type="radio" name="toggle" id="fast" value="15" />
                 <label class="speed-choice" for="fast">FAST</label>
             </form>
             <br>
             <p>Enjoy!</p>
             <p>Score: <span class="score"></span></p>
-       </div>
+        </div>
         <!-- snake game grid -->
-       <div class="game-board"></div>
+        <div class="game-board"></div>
+        <!--Touch controls box-->
+        <div id="touch-controls"></div>
+        <table id="table-buttons">
+            <tr>
+                <td></td>
+                <td>
+                    <button class='btnControls' id="btn-up" aria-label="Up Button">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <button class='btnControls' id="btn-left" aria-label="Left Button">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <button class='btnControls' id="btn-right" aria-label="Right Button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class='btnControls' id="btn-down" aria-label="Down Button">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        </div>
     </main>
     <footer>
         <ul>
-            <li><a href="https://www.facebook.com/" target="_blank"><i
-                        class="fa-brands fa-facebook f-ico"></i></a></li>
-            <li><a href="https://instagram.com/" target="_blank"><i
-                        class="fa-brands fa-instagram f-ico"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook f-ico"></i></a></li>
+            <li><a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram f-ico"></i></a></li>
             <li><a href="https://www.linkedin.com/in/bruno-diego-da-silva-151027192/" target="_blank"><i
                         class="fa-brands fa-linkedin f-ico"></i></a></li>
-            <li><a href="https://github.com/Bruno-Diego/" target="_blank"><i
-                        class="fa-brands fa-github f-ico"></i></a></li>
+            <li><a href="https://github.com/Bruno-Diego/" target="_blank"><i class="fa-brands fa-github f-ico"></i></a>
+            </li>
         </ul>
     </footer>
     <!-- scripts to run the snake game -->
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

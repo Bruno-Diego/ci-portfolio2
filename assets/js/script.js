@@ -271,3 +271,53 @@ function outsideGrid(position) {
         position.y < 1 || position.y > GRID_SIZE
     )
 }
+
+//Touch Controls functions
+let touchControls = document.getElementsByClassName('btnControls');
+for (let i = 0; i < touchControls.length; i++) {
+    touchControls[i].addEventListener('click', touchControlsClicked);
+}
+function touchControlsClicked() {
+    console.log(lastInputDirection)
+    if (this.getAttribute("id") === "btn-left") {
+        if(lastInputDirection.x !== 0){
+            return
+        } else {
+            inputDirection = {
+                x: -1,
+                y: 0
+            }
+            return
+        }
+    } else if (this.getAttribute("id") === "btn-right") {
+       if(lastInputDirection.x !== 0){
+        return
+       } else {
+        inputDirection = {
+            x: 1,
+            y: 0
+        }
+        return
+       }
+    } else if (this.getAttribute("id") === "btn-up") {
+       if(lastInputDirection.y !== 0){
+        return
+       } else {
+        inputDirection = {
+            x: 0,
+            y: -1
+        }
+        return
+       }
+    } else if (this.getAttribute("id") === "btn-down") {
+        if(lastInputDirection.y !== 0){
+            return
+        } else {
+            inputDirection = {
+                x: 0,
+                y: 1
+            }
+            return
+        }
+    }
+}
