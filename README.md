@@ -1,5 +1,7 @@
 # Snake Game Website
 
+![](./assets/docs/responsiveness.png)
+
 [Access the Live CI Snake Game Website here](https://bruno-diego.github.io/ci-portfolio2/) (Ctrl + Click to open on a new tab)
 
 ## Table of Contents
