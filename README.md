@@ -34,6 +34,8 @@
 
 Welcome fellow visitor,
 
+This is the CI Snake Game Website. Our goal is to give the user a game that can be both challenging and fun!
+
 ## User stories
 
 ## Features
