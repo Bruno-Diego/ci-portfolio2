@@ -36,9 +36,70 @@ Welcome fellow visitor,
 
 This is the CI Snake Game Website. Our goal is to give the user a game that can be both challenging and fun!
 
+This website is made of the following sections:
+
+  1. Title.
+  2. Instructions to play the game.
+  3. Gaming area.
+  4. On-screen controls.
+  5. Feedback area.
+  6. Social media links.
+
+The business goals for this website are:
+
+  1. To give the user a fun and challenging game.
+  2. To get user feedback about the game.
+
+The target users are:
+
+  - People of all ages.
+  - Interested in playing a game that is challenging and fun at the same time.
+
+What these users would be looking for:
+
+  - A game that can be played to pass time without being too stressful.
+  - A game with multiple levels of difficulty to be challenging.
+  - A game that can be played using the keyboard or the on-screen commands.
+  - A funny game to play with the option to provide feedback.
+
+The user interested in play this game can see from the title that it's a snake game. Immediately the user can find the instructions to play the game when the page is loaded. The user is presented with the options to change the speed of the game between Low, Average and Fast. The Standard option is Slow but it can be changed at any momment before the game starts or during the gameplay. The user can choose to use his own keyboard or the on-screen buttons to move the snake on the gaming area. Below the controls buttons, the user can see a presentation paragraph and a form to send feedback to the website's creator. At the bottom of the page, the user can access the links for social media.
+
+The following features will be included in this release:
+
+  - Title
+  - Instructions for the user about how to play the game.
+  - Options to change the speed of the game.
+  - Gaming area.
+  - E-mail contact form.
+  - Links to social media pages.
+
+
+This website was crafted using semantic HTML5 for structure, CSS3 for stylings and presentation and Javascript for dynamic and interactive content. It was created to give birth to the Second "Portfolio Project" to complete as part of the Diploma in Full Stack Software Development course at Code Institute in Dublin, Republic of Ireland. 
+
+For better UI/UX, a modern and simple interface is used with a well-defined title, spaced letters with good contrast for a cool reading and colors based on a forrest pallette uniformized in the entire website.
+
+The layout has an intuitive structure with the title at the top, the footer at the bottom and the content in the area in between. The styling is consistent through all pages. Links to the social media are styled to have an animated fade when when hovered upon and also open in a new tab.
+
+The footer contains icons for Facebook, Instagram, Github and LinkedIn, which link as expected to the website's and the creator's accounts on the respective platforms. The website is fully responsive and can be accessed on many different screens and is compatible with the most used browsers.
+
+
 ## User stories
 
+- As a **visitor**, I can intuitively navigate through the site so that I can view desired content.
+- As a **visitor**, I can easily find the title of the game and know what the game is about.
+- As a **visitor** I can find a navigation bar at the top and a footer at the bottom so that I can see what content there is on the website.
+- As a **visitor** I can find links at the footer that open to social media websites on a new tab.
+- As a **visitor** I can get key information about the website so that I can spend less time having to search for information including the instructions to play the game.
+- As a **visitor** I can easily change the speed of the game choosing between Slow, Average and Fast speed.
+- As a **visitor** I can immediately find the gaming area to play.
+- As a **visitor** I can choose to use the keyboard to play the game or to use the on-screen buttons.
+- As a **visitor** I can contact the creator via e-mail with the contact form.
+- As a **visitor** I am notified about the success/fail submission of the e-mail message.
+- As a **visitor** I can access the website on both mobile and desktop so that I can view the information regardless of my location.
+
 ## Features
+
+
 
 ### Future features
 
