@@ -106,6 +106,12 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 
 ## Typography and color scheme
 
+- The main font used on the website was `Raleway` from [Google Fonts](https://fonts.google.com/). is an elegant sans-serif typeface family. [Source](https://fonts.google.com/specimen/Raleway?query=Raleway#about).
+
+- The colors on the website are inspired by a Forrest/Bamboo Palette created on [Coolors.co](https://coolors.co/) with multiple shades of greens to inspire a natural vibe in the user.
+
+![](./assets/docs/color-palette.png)
+
 ## Wireframes
 
 This website was first planned from scratch on Balsamic Wireframes with the license provided by the Code Institute. [Click here](./assets/docs/snake-game-wireframes.pdf) to see the wireframes of the raw project.
