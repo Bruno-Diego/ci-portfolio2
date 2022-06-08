@@ -86,6 +86,37 @@ p {
     border-radius: 50%;
 }
 
+/* Styles for the form section */
+
+.feedback {
+    display: flex;
+    width: 70vmin;
+}
+
+.feedback-p, .feedback-form {
+    width: 50%;
+    padding: 3%;
+    margin: auto;
+}
+
+.feedback-p {
+    text-align: justify;
+}
+
+.feedback-form {
+    font-family: 'Raleway', sans-serif;
+    color: #f5f5f5;
+    text-align: center;
+    align-self: center;
+}
+.feedback-title, .feedback-form input {
+    margin: 0.1em;
+}
+
+.message-area {
+    vertical-align: top;
+}
+
 /* Style for the footer */
 ul {
     list-style: none;
@@ -96,7 +127,7 @@ ul {
 li {
     font-family: 'Raleway', sans-serif;
     color: #f5f5f5;
-    padding: 4vw;
+    padding: 1em;
     font-size: 140%;
 }
 
@@ -123,5 +154,21 @@ i:hover {
 
     to {
         opacity: 1;
+    }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 820px) {
+    .feedback {
+        display: block;
+        padding: 0;
+        width: auto;
+    }
+
+    .feedback-p, .feedback-form {
+        width: 50%;
+        padding: 3%;
+        margin: auto;
     }
 }
