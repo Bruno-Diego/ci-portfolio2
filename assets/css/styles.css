@@ -90,11 +90,11 @@ p {
 
 .feedback {
     display: flex;
-    width: 70vmin;
+    width: 100vmin;
 }
 
 .feedback-p, .feedback-form {
-    width: 70%;
+    width: 100%;
     padding: 3%;
     margin: auto;
 }
