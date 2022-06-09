@@ -191,7 +191,7 @@ Cloning your repository will allow you to download a local version of the reposi
 
 Please note it can take a while for this link to become fully active. 
 
-The live link can be found [here](#).
+The live link can be found [here](https://bruno-diego.github.io/ci-portfolio2/).
 
 ## Credits 
 
