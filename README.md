@@ -66,7 +66,7 @@ The user interested in play this game can see from the title that it's a snake g
 
 The following features will be included in this release:
 
-  - Title
+  - Title with a link to the main page.
   - Instructions for the user about how to play the game.
   - Options to change the speed of the game.
   - Gaming area.
@@ -99,8 +99,34 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 
 ## Features
 
+### Title
 
+  - The title is clear and elusive to the game itself, made to be reckognized by the user as a snake game. It has a link that leads back to the main page at any momment.
 
+### Instructions
+
+  - The instructions area helps the user to understand how the came can be played and what are the rules in a clear and precise way to avoid any sort of confusion. 
+
+### Game Difficuty
+
+  - The game has tree levels of difficulty: Slow, Average and Fast. The default level is slow and the user can change this difficulty before or after start to play the game.
+
+### Gaming Area
+
+  - The gaming area includes a Score field that is increased by 1 everytime the user use the snake on the screen to eat one piece of fruit in the game.
+  - The gaming area is composed of a square made on a grid style with 21 rows and 21 colums.
+  - The gaming area also includes on-screen buttons that the user can use to move the snake on the board with arrows indicating each direction. 
+
+### Feedback Form
+
+  - The feedback form area contains a brief text with information about the website and it's creator, and asks to the user for a feedback.
+  - The feedback form itself it's composed buy tree fields: Name, E-mail and Message. All the fields are required and after clicking the submit button, the user is redirected to a page confirming that the e-mail was successfully sent.
+
+### Footer
+  
+  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media.
+  
 ### Future features
 
 
@@ -185,9 +211,7 @@ Cloning your repository will allow you to download a local version of the reposi
     3. In the menu located at the top of this section, click `Settings`
     4. Select `Pages` on the left-hand menu - this is around halfway down
     5. In the source section, select branch `Master` and save
-    6. The page is then given a site URL which you will see above the source section, it will look like the following: 
-
-  ![](#)
+    6. The page is then given a site URL which you will see above the source section.
 
 Please note it can take a while for this link to become fully active. 
 
