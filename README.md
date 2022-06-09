@@ -120,15 +120,22 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 ### Feedback Form
 
   - The feedback form area contains a brief text with information about the website and it's creator, and asks to the user for a feedback.
-  - The feedback form itself it's composed buy tree fields: Name, E-mail and Message. All the fields are required and after clicking the submit button, the user is redirected to a page confirming that the e-mail was successfully sent.
+  - The feedback form itself it's composed buy tree fields: Name, E-mail and Message. All the fields are required and after clicking the submit button, the user is redirected to the success page.
 
 ### Footer
   
   - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media.
-  
+
+### The Success Page
+
+  - The button on the contact form leads the user to the success page confirming that the e-mail with the message was successfully sent. 
+
 ### Future features
 
+ - For the future deployments to the website, I would like to implement a newsletter for user subscription;
+  - Besides, I would like to implement on the future multiple pages with different types of games;
+  - I also would like to create a section for users' comments.
 
 ## Typography and color scheme
 
@@ -145,6 +152,45 @@ This website was first planned from scratch on Balsamic Wireframes with the lice
 Please note the actual website has changed slightly from these wireframes.
 
 ## Technologies Used
+
+I have used several technologies that have enabled this design to work:
+
+  - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+    - Used as the basic building block for the project and to structure the content.
+  - [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+    - Used to style all the web content across the project. 
+  - [Font Awesome](https://fontawesome.com/)
+    - Used to obtain the social media icons used in the footer and the icons in La Petite Review.
+  - [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used as a primary method of fixing spacing issues, finding bugs, and testing responsiveness across the project.
+  - [GitHub](https://github.com/)
+    - Used to store code for the project after being pushed.
+  - [Git](https://git-scm.com/)
+    - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+  - [Gitpod](https://www.gitpod.io/)
+    - Used as the development environment.
+  - [Balsamiq](https://balsamiq.com/)
+    - Used to create the wireframes for the project
+  - [Coloors](https://coolors.co/)
+    - Used to create a color palette for the design.
+  - [Favicon.io](https://favicon.io/)
+    - Used to create favicon for my website.
+  - [Color Contrast Accessibility Validator](https://color.a11y.com/)
+    - Allowed me to test the color contrast of my webpage.
+  - [W3C Markup Validation Service](https://validator.w3.org/) 
+    - Used to validate all HTML code written and used in this webpage.
+  - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - Used to validate all CSS code written and used in this webpage.
+  - [FormSubmit](https://formsubmit.co/)
+    - Used to submit a contact message with the HTML form.
+  - [AmIResponsive](http://ami.responsivedesign.is/)
+    - Used to generate repsonsive image used in README file.
+  - [GIMP](https://www.gimp.org/)
+    - Used to edit the success page image.
+  - [CodePen.io](https://codepen.io/)
+    - Used to research code.
+  - [Grammarly](https://www.grammarly.com/)
+    - Used to fix the grammar errors across the project.
 
 ## Code validation 
 
