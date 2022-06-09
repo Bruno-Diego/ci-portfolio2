@@ -29,6 +29,11 @@ header h1 {
     font-family: 'Raleway', sans-serif;
     color: #f5f5f5;
     text-align: center;
+    border-bottom: 0.2em groove #d6f8a0;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
