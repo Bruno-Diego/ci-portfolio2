@@ -202,10 +202,6 @@ I have used several technologies that have enabled this design to work:
 
 ## Supported Screens and Browsers
 
-## Deployment
-
-## Supported Screens and Browsers
-
 - The website is fully responsive and can be accessed on smartphones (width of 600px and smaller), tablets (width of 820px and smaller) and monitors of any size.
 
 - The website was tested and is supported on the browsers Google Chrome, Mozilla Firefox, Microsoft Edge, Opera and Brave.
@@ -264,6 +260,12 @@ Please note it can take a while for this link to become fully active.
 The live link can be found [here](https://bruno-diego.github.io/ci-portfolio2/).
 
 ## Credits 
+
+- Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems, in addition to various modules to build the functionality of this website:
+  - The text for the Home page and contact page was created by myself.
+  - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+  - [FormSubmit](https://formsubmit.co/).
+  - The Javascript code was inspired by the tutorial found on the [Web Dev Simplified] Youtube Channel and the Github repository can be found [here](https://github.com/WebDevSimplified/Javascript-Snake-Game/).
 
 ---
 
