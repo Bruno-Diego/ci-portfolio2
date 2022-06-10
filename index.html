@@ -29,7 +29,8 @@
             <p>Welcome to my Snake Game! In this game you control a Snake (green square) searching for apples
                 (red circle) using the arrow keys in your keyboard or the on-screen buttons below the board!</p>
             <p>INSTRUCTIONS:</p>
-            <p>Start the game pressing any direction on the keyboard or the buttons and try to eat as many apples as you can without
+            <p>Start the game pressing any direction on the keyboard or the buttons and try to eat as many apples as you
+                can without
                 hitting the dashed border of the game area or your own body because if you do, the game is OVER!</p>
             <p>Select the speed of the snake clicking below:</p>
             <form class="choose-speed">
@@ -47,42 +48,42 @@
         <!-- snake game grid -->
         <div class="game-board"></div>
         <!--Touch controls box-->
-        <div id="touch-controls"></div>
-        <table id="table-buttons">
-            <tr>
-                <td></td>
-                <td>
-                    <button class='btnControls' id="btn-up" aria-label="Up Button">
-                        <i class="fas fa-arrow-up"></i>
-                    </button>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <button class='btnControls' id="btn-left" aria-label="Left Button">
-                        <i class="fas fa-arrow-left"></i>
-                    </button>
-                </td>
-                <td>
-                    <span></span>
-                </td>
-                <td>
-                    <button class='btnControls' id="btn-right" aria-label="Right Button">
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <button class='btnControls' id="btn-down" aria-label="Down Button">
-                        <i class="fas fa-arrow-down"></i>
-                    </button>
-                </td>
-                <td></td>
-            </tr>
-        </table>
+        <div id="touch-controls">
+            <table id="table-buttons">
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class='btnControls' id="btn-up" aria-label="Up Button">
+                            <i class="fas fa-arrow-up"></i>
+                        </button>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class='btnControls' id="btn-left" aria-label="Left Button">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </td>
+                    <td>
+                        <span></span>
+                    </td>
+                    <td>
+                        <button class='btnControls' id="btn-right" aria-label="Right Button">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class='btnControls' id="btn-down" aria-label="Down Button">
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
     </main>
     <div class="feedback">
@@ -103,8 +104,8 @@
             <input type="email" name="email" id="email" placeholder="Your e-mail" required><br />
             <input type="hidden" name="_next" value="https://bruno-diego.github.io/ci-portfolio2/success.html">
             <input type="hidden" name="_captcha" value="false">
-            <label class="message-area" for="textarea">Message:</label>
-            <textarea id="message" name="textarea" placeholder="Write your message here!" required></textarea>
+            <label class="message-area" for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here!" required></textarea>
             <br>
             <input class="button" type="submit" value="Submit e-mail!">
         </form>
