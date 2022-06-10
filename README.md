@@ -194,7 +194,6 @@ I have used several technologies that have enabled this design to work:
 
 ## Code validation 
 
-
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbruno-diego.github.io%2Fci-portfolio2%2F).
 
@@ -202,7 +201,7 @@ I have used several technologies that have enabled this design to work:
   - No errors were found on the website when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbruno-diego.github.io%2Fci-portfolio2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 - JSHint
-  - 
+  - No errors were found on the website when using [JSHint Validator](https://jshint.com/install/) plugin extention installed on Gitpod. The configuration was "esversion": [9](https://jshint.com/docs/options/#esversion) and "asi": [true](https://jshint.com/docs/options/#asi).
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
   - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a  good performance, assessibility, best practises and SEO scores, as you can see on this [report](./assets/docs/lighthouse.pdf).
