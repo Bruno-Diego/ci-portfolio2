@@ -199,11 +199,13 @@ I have used several technologies that have enabled this design to work:
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbruno-diego.github.io%2Fci-portfolio2%2F).
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbruno-diego.github.io%2Fci-portfolio2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+  - No errors were found on the website when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbruno-diego.github.io%2Fci-portfolio2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+
+- JSHint
+  - 
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-  - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a high-performance score, as you can see below:
-  ![](./assets/docs/lighthouse.png)
+  - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a  good performance, assessibility, best practises and SEO scores, as you can see on this [report](./assets/docs/lighthouse.pdf).
 
 - [Color Contrast Accessibility Validator](https://color.a11y.com/)
   - Allowed me to test the colour contrast of my webpage.
