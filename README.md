@@ -342,7 +342,7 @@ The live link can be found [here](https://bruno-diego.github.io/ci-portfolio2/).
   - The text for the Home page and contact page was created by myself.
   - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
   - [FormSubmit](https://formsubmit.co/).
-  - The Javascript code was inspired by the tutorial found on the [Web Dev Simplified] Youtube Channel and the Github repository can be found [here](https://github.com/WebDevSimplified/Javascript-Snake-Game/).
+  - The Javascript code was inspired by the tutorial found on the [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) Youtube Channel and the Github repository can be found [here](https://github.com/WebDevSimplified/Javascript-Snake-Game/).
 
 ---
 
