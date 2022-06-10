@@ -109,7 +109,7 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 
 ### Game Difficuty
 
-  - The game has tree levels of difficulty: Slow, Average and Fast. The default level is slow and the user can change this difficulty before or after start to play the game.
+  - The game has three levels of difficulty: Slow, Average and Fast. The default level is slow and the user can change this difficulty before or after start to play the game.
 
 ### Gaming Area
 
@@ -120,7 +120,7 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 ### Feedback Form
 
   - The feedback form area contains a brief text with information about the website and it's creator, and asks to the user for a feedback.
-  - The feedback form itself it's composed buy tree fields: Name, E-mail and Message. All the fields are required and after clicking the submit button, the user is redirected to the success page.
+  - The feedback form itself it's composed by three fields: Name, E-mail and Message. All the fields are required and after clicking the submit button, the user is redirected to the success page.
 
 ### Footer
   
@@ -214,7 +214,66 @@ I have used several technologies that have enabled this design to work:
 
 ## Test cases
 
+1. **As a visitor, I can intuitively navigate through the site so that I can view desired content.**
+    - As soon as you enter the page you can easily see the title, which is elusive to the game and is a link to refresh the page.
+    - The title of the main page is indicated by the bottom border beneath it.
+    - The user can click the website's title "CI SNAKE GAME' to refresh the page.
+      
+![](./assets/docs/title.png)
 
+2. **As a visitor, I can easily find information about the website and how to explore it.**
+    - You can immediately find on the first block of text, information about what is the game to be played, how the user should interact andwhats the main goal.
+    - Below the first paragraph, you will find the instructions of how to play the game.
+          
+![](./assets/docs/instructions.png)
+
+3. **As a visitor, I can change the difficulty of the game.**
+    - Immediately below the instructions, You can find three buttons: Slow, Average and Fast. The buttons that are not selected have opacity of 0.6 and the background white, while the selected has opacity 1 and the background green.
+    - The default option is SLOW and is indicated by the button with full opacity and green background. Whith this option selected, the snake moves 5 blocks per second.
+    - The user hover the mouse over the option average and the opacity becomes 1 with a quick transition using CSS. 
+    - The user clicks the button with the option Average and its backgound becomes green, while the option Slow becomes white with opacity 0.6 and the snake moves 10 blocks per second.
+    - The user hover the mouse over the option Fast and the opacity becomes 1 with a quick transition using CSS. 
+    - The user clicks the button with the option Fast and its backgound becomes green, while the option Average becomes white with opacity 0.6 and the snake moves 15 blocks per second.
+          
+![](./assets/docs/speed.png)
+
+4. **As a visitor, I can easily find monitor my progress on the game with the increasing score.**
+    - The user can see the Score above the gaming board to monitor his progress.
+    - The user press the keyboard or the on-screen arrows to move the snake to any direction and start the game.
+    - The snake starts moving and the user move the snake in the direction of the food.
+    - The Score is increased by 1 everytime the head of the snake passes over the red food.
+
+![](./assets/docs/score.png)
+
+5. **As a visitor, I can easily find and interact with the game board.**
+    - The user identify the gaming board by the big square in the center of the page.
+    - The user identify the snake as a green square in the center of the board as per instructions.
+    - The food is created when the page is loaded in a random position inside the board.
+    - The user press the keyboard or the on-screen arrows to move the snake to any direction and start the game.
+    - The snake starts moving and the user move the snake in the direction of the food.
+    - The Score is increased by 1 everytime the head of the snake passes over the red food.
+
+![](./assets/docs/board.png)
+
+6. **As a visitor, I can provide feedback to the website sending an e-mail to it's creator.**
+    - The main page contains a form that you can fill in with your name, e-mail and a message that is sent straight to the e-mail of the website's creator.
+    - If the user clicks the `Submit e-mail!` Button an error message will be displayed on the `Name` field as this is a required field;
+    - The user fills the `Name` field with his name;
+    - If the user clicks the `Submit e-mail!` Button an error message will be displayed on the `E-mail` field as this is a required field;
+    - The user fills the `E-mail` field with his contact e-mail;
+    - If the user clicks the `Submit e-mail!` Button an error message will be displayed on the `Message` field as this is a required field;
+    - The user fills the `Message` field with his message directed to the website's creator;
+    - If the user clicks the `Submit e-mail!` Button and no error should appear;
+    - The user is redirected to the success page confirming the submission of the form.
+
+  ![](./assets/docs/feedback.png)
+
+7. **As a visitor I am notified about the success/fail submission of the e-mail message.**
+    - As soon as you submit your message by clicking the `Submit e-mail!` button, you are redirected to a Success Page, confirming that the submission was successful.
+    - When the page is loaded the user can immediately see a message of confirmation;
+
+    ![](./assets/docs/success.png)
+  
 ## Fixed bugs
 
 
