@@ -251,6 +251,10 @@ I have used several technologies that have enabled this design to work:
     - The user press the keyboard or the on-screen arrows to move the snake to any direction and start the game.
     - The snake starts moving and the user move the snake in the direction of the food.
     - The Score is increased by 1 everytime the head of the snake passes over the red food.
+    - When the snake hit one of the borders of the area or it's own body, the game is over and the message "GAME OVER! Press ok to try again." will pop up.
+    - The user clicks on the "OK" button.
+    - The page refresh and the game restarts.
+    - If the user clicks cancel the page doesn't refresh and the user stays on the page.
 
 ![](./assets/docs/board.png)
 
