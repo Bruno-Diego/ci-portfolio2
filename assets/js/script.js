@@ -278,7 +278,6 @@ for (let i = 0; i < touchControls.length; i++) {
     touchControls[i].addEventListener('click', touchControlsClicked);
 }
 function touchControlsClicked() {
-    console.log(lastInputDirection)
     if (this.getAttribute("id") === "btn-left") {
         if(lastInputDirection.x !== 0){
             return
