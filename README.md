@@ -218,13 +218,13 @@ I have used several technologies that have enabled this design to work:
     - The title of the main page is indicated by the bottom border beneath it.
     - The user can click the website's title "CI SNAKE GAME' to refresh the page.
       
-![](./assets/docs/title.png)
+      ![](./assets/docs/title.png)
 
 2. **As a visitor, I can easily find information about the website and how to explore it.**
     - You can immediately find on the first block of text, information about what is the game to be played, how the user should interact andwhats the main goal.
     - Below the first paragraph, you will find the instructions of how to play the game.
           
-![](./assets/docs/instructions.png)
+     ![](./assets/docs/instructions.png)
 
 3. **As a visitor, I can change the difficulty of the game.**
     - Immediately below the instructions, You can find three buttons: Slow, Average and Fast. The buttons that are not selected have opacity of 0.6 and the background white, while the selected has opacity 1 and the background green.
@@ -234,7 +234,7 @@ I have used several technologies that have enabled this design to work:
     - The user hover the mouse over the option Fast and the opacity becomes 1 with a quick transition using CSS. 
     - The user clicks the button with the option Fast and its backgound becomes green, while the option Average becomes white with opacity 0.6 and the snake moves 15 blocks per second.
           
-![](./assets/docs/speed.png)
+     ![](./assets/docs/speed.png)
 
 4. **As a visitor, I can easily find monitor my progress on the game with the increasing score.**
     - The user can see the Score above the gaming board to monitor his progress.
@@ -242,7 +242,7 @@ I have used several technologies that have enabled this design to work:
     - The snake starts moving and the user move the snake in the direction of the food.
     - The Score is increased by 1 everytime the head of the snake passes over the red food.
 
-![](./assets/docs/score.png)
+        ![](./assets/docs/score.png)
 
 5. **As a visitor, I can easily find and interact with the game board.**
     - The user identify the gaming board by the big square in the center of the page.
@@ -256,7 +256,7 @@ I have used several technologies that have enabled this design to work:
     - The page refresh and the game restarts.
     - If the user clicks cancel the page doesn't refresh and the user stays on the page.
 
-![](./assets/docs/board.png)
+   ![](./assets/docs/board.png)
 
 6. **As a visitor, I can provide feedback to the website sending an e-mail to it's creator.**
     - The main page contains a form that you can fill in with your name, e-mail and a message that is sent straight to the e-mail of the website's creator.
