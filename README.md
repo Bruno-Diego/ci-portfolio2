@@ -91,7 +91,6 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 - As a **visitor** I can find links at the footer that open to social media websites on a new tab.
 - As a **visitor** I can get key information about the website so that I can spend less time having to search for information including the instructions to play the game.
 - As a **visitor** I can easily change the speed of the game choosing between Slow, Average and Fast speed.
-- As a **visitor** I can immediately find the gaming area to play.
 - As a **visitor** I can choose to use the keyboard to play the game or to use the on-screen buttons.
 - As a **visitor** I can contact the creator via e-mail with the contact form.
 - As a **visitor** I am notified about the success/fail submission of the e-mail message.
@@ -279,10 +278,10 @@ I have used several technologies that have enabled this design to work:
   
 ## Fixed bugs
 
-- On problem found in the game was the pop up message shown when the game is over as the image below. It was causing a problem for users that have pop-up blockers that prevent the message to be shown.
+- A user found an issue in the game: the pop up message shown when the game is over as the image below. It was causing a problem for users that have pop-up blockers and preventing the message to be shown.
     ![](./assets/docs/popup-bug.png)
 
-- As a solution, insted of a pop-up, when the game is over the gaming board and the controls are hidden and a new message and a button are shown to notify the user and give him the option to restart.
+- As a **solution**, insted of a pop-up, when the game is over the gaming board and the controls are hidden and a new message and a button are shown to notify the user and give him the option to restart.
     ![](./assets/docs/gameover-msg.png)
 
 ## Supported Screens and Browsers
