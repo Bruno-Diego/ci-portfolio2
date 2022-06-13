@@ -3,7 +3,8 @@
 let gameOver = false
 let lastRenderTime = 0
 let gameBoard = document.getElementsByClassName('game-board')[0]
-
+let gameOverMessage = document.getElementsByClassName('game-over')[0]
+let controlBtns = document.getElementById('touch-controls')
 //Snake variables
 //Snake speed selected by user
 const SNAKE_SPEED = () => document.querySelector('input[name="toggle"]:checked').value
@@ -25,7 +26,7 @@ const GRID_SIZE = 20
 
 window.addEventListener('DOMContentLoaded', (event) => {
     window.requestAnimationFrame(main)
-
+    gameOverMessage.style.display = "none"
     for (let i = 0; i < touchControls.length; i++) {
         touchControls[i].addEventListener('click', touchControlsClicked);
     }
@@ -72,10 +73,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
  */
 function main(currentTime) {
     if (gameOver) {
-        if (confirm('GAME OVER! Press ok to try again.')) {
-            window.location = './index.html'
-        }
-        return
+        gameBoard.style.display = "none"
+        controlBtns.style.display = "none"
+        gameOverMessage.style.display = "block"
+        // if (confirm('GAME OVER! Press ok to try again.')) {
+        //     window.location = './index.html'
+        // }
+        // return
     }
 
     //getting the frame to animate the game
@@ -118,6 +122,10 @@ function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
 
+//Function to Restart the game
+function restart(){
+    window.location = './index.html'
+}
 
 // Functions for the snake
 
@@ -145,7 +153,7 @@ function updateSnake() {
 function drawSnake(gameBoard) {
     SNAKE_BODY.forEach(segment => {
         
-        const snakeElement = document.createElement('div')
+        let snakeElement = document.createElement('div')
         snakeElement.style.gridRowStart = segment.y
         snakeElement.style.gridColumnStart = segment.x
         snakeElement.classList.add('snake')

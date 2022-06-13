@@ -79,6 +79,10 @@ p {
     border-color: #000000;
 }
 
+/* Game over message */
+.game-over {
+    color: #f5f5f5;
+}
 /* Style of the snake */
 .snake {
     background-color: #3C533F;
