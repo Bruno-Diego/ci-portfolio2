@@ -2,13 +2,13 @@
 //Main game variables
 let gameOver = false
 let lastRenderTime = 0
-const gameBoard = document.getElementsByClassName('game-board')[0]
+let gameBoard = document.getElementsByClassName('game-board')[0]
 
 //Snake variables
 //Snake speed selected by user
 const SNAKE_SPEED = () => document.querySelector('input[name="toggle"]:checked').value
 //initial position for the snake
-const snakeBody = [{ x: 11, y: 11 }]
+const SNAKE_BODY = [{ x: 11, y: 11 }]
 let newSegments = 0
 //initial position reference for user input
 let inputDirection = { x: 0, y: 0 }
@@ -18,8 +18,51 @@ let food = getRandomFoodPosition()
 //Rate the snake grows when it eats the food
 const EXPANSION_RATE = 1
 //Score counter
-const getScore = document.getElementsByClassName('score')[0]
+let getScore = document.getElementsByClassName('score')[0]
 let score = 0
+let touchControls = document.getElementsByClassName('btnControls');
+const GRID_SIZE = 20
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    window.requestAnimationFrame(main)
+
+    for (let i = 0; i < touchControls.length; i++) {
+        touchControls[i].addEventListener('click', touchControlsClicked);
+    }
+    window.addEventListener('keydown', e => {
+        switch (e.key) {
+            case 'ArrowUp':
+                if (lastInputDirection.y !== 0) break
+                inputDirection = {
+                    x: 0,
+                    y: -1
+                }
+                break
+            case 'ArrowDown':
+                if (lastInputDirection.y !== 0) break
+                inputDirection = {
+                    x: 0,
+                    y: 1
+                }
+                break
+            case 'ArrowLeft':
+                if (lastInputDirection.x !== 0) break
+                inputDirection = {
+                    x: -1,
+                    y: 0
+                }
+                break
+            case 'ArrowRight':
+                if (lastInputDirection.x !== 0) break
+                inputDirection = {
+                    x: 1,
+                    y: 0
+                }
+                break
+        }
+    })
+});
+
 
 
 // Main game functions
@@ -47,7 +90,7 @@ function main(currentTime) {
     draw()
 }
 
-window.requestAnimationFrame(main)
+
 /**
  * Moves the snake to the correct position but doesnt draw it
  * also says when the game is lost
@@ -85,14 +128,14 @@ function updateSnake() {
     addSegments()
     const inputDirection = getInputDirection()
     //update every segment except the last one
-    for (let i = snakeBody.length - 2; i >= 0; i--) {
-        snakeBody[i + 1] = {
-            ...snakeBody[i]
+    for (let i = SNAKE_BODY.length - 2; i >= 0; i--) {
+        SNAKE_BODY[i + 1] = {
+            ...SNAKE_BODY[i]
         }
     }
 
-    snakeBody[0].x += inputDirection.x
-    snakeBody[0].y += inputDirection.y
+    SNAKE_BODY[0].x += inputDirection.x
+    SNAKE_BODY[0].y += inputDirection.y
 }
 
 
@@ -100,7 +143,7 @@ function updateSnake() {
  * Draws the snake after update the position
  */
 function drawSnake(gameBoard) {
-    snakeBody.forEach(segment => {
+    SNAKE_BODY.forEach(segment => {
         
         const snakeElement = document.createElement('div')
         snakeElement.style.gridRowStart = segment.y
@@ -124,8 +167,8 @@ function expandSnake(amount) {
  */
 function onSnake(position, {
     ignoreHead = false
-} = {}) {
-    return snakeBody.some((segment, index) => {
+    } = {}) {
+    return SNAKE_BODY.some((segment, index) => {
         //ignores if the snake head is on the snake head
         if (ignoreHead && index === 0) return false
         return equalPositions(segment, position)
@@ -137,14 +180,14 @@ function onSnake(position, {
  * Get the position of the head of the snake 
  */
 function getSnakeHead() {
-    return snakeBody[0]
+    return SNAKE_BODY[0]
 }
 
 /**
  * Verify if the head of the snake touches the body 
  */
 function snakeIntersection() {
-    return onSnake(snakeBody[0], {
+    return onSnake(SNAKE_BODY[0], {
         ignoreHead: true
     })
 }
@@ -163,8 +206,8 @@ function equalPositions(pos1, pos2) {
 function addSegments() {
     for (let i = 0; i < newSegments; i++) {
         //takes the very last segment and duplicate on the end of the snake
-        snakeBody.push({
-            ...snakeBody[snakeBody.length - 1]
+        SNAKE_BODY.push({
+            ...SNAKE_BODY[SNAKE_BODY.length - 1]
         })
     }
     //Avoid add more elements then its told to
@@ -174,38 +217,7 @@ function addSegments() {
 // User input and controls
 
 //Listen to the user input with the arrow keys on the keyboard
-window.addEventListener('keydown', e => {
-    switch (e.key) {
-        case 'ArrowUp':
-            if (lastInputDirection.y !== 0) break
-            inputDirection = {
-                x: 0,
-                y: -1
-            }
-            break
-        case 'ArrowDown':
-            if (lastInputDirection.y !== 0) break
-            inputDirection = {
-                x: 0,
-                y: 1
-            }
-            break
-        case 'ArrowLeft':
-            if (lastInputDirection.x !== 0) break
-            inputDirection = {
-                x: -1,
-                y: 0
-            }
-            break
-        case 'ArrowRight':
-            if (lastInputDirection.x !== 0) break
-            inputDirection = {
-                x: 1,
-                y: 0
-            }
-            break
-    }
-})
+
 
 //get the user input and change direction of the snake
 function getInputDirection() {
@@ -252,7 +264,7 @@ function getRandomFoodPosition() {
 
 // Functions to create a random position for the food
 //size of the game
-const GRID_SIZE = 20
+
 /**
  * Gives a random position inside the grid
  */
@@ -273,10 +285,7 @@ function outsideGrid(position) {
 }
 
 //Touch Controls functions
-let touchControls = document.getElementsByClassName('btnControls');
-for (let i = 0; i < touchControls.length; i++) {
-    touchControls[i].addEventListener('click', touchControlsClicked);
-}
+
 function touchControlsClicked() {
     if (this.getAttribute("id") === "btn-left") {
         if(lastInputDirection.x !== 0){
