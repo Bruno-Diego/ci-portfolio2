@@ -279,6 +279,11 @@ I have used several technologies that have enabled this design to work:
   
 ## Fixed bugs
 
+- On problem found in the game was the pop up message shown when the game is over as the image below. It was causing a problem for users that have pop-up blockers that prevent the message to be shown.
+    ![](./assets/docs/popup-bug.png)
+
+- As a solution, insted of a pop-up, when the game is over the gaming board and the controls are hidden and a new message and a button are shown to notify the user and give him the option to restart.
+    ![](./assets/docs/gameover-msg.png)
 
 ## Supported Screens and Browsers
 

@@ -4,7 +4,7 @@ let gameOver = false
 let lastRenderTime = 0
 let gameBoard = document.getElementsByClassName('game-board')[0]
 let gameOverMessage = document.getElementsByClassName('game-over')[0]
-let controlBtns = document.getElementById('touch-controls')
+let controlBtns = document.getElementsByClassName('touch-controls')[0]
 //Snake variables
 //Snake speed selected by user
 const SNAKE_SPEED = () => document.querySelector('input[name="toggle"]:checked').value
