@@ -62,6 +62,7 @@ p {
 .speed-choice:hover{
     opacity: 1;
 }
+
 .speed[type="radio"]:checked + label {
     background-color: #D6F8A0;
     opacity: 1;

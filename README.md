@@ -97,6 +97,9 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 - As a **visitor** I can access the website on both mobile and desktop so that I can view the information regardless of my location.
 
 ## Features
+  - These are the features included on this release:
+
+    ![](./assets/docs/full-screen.png)
 
 ### Title
 
@@ -142,7 +145,7 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 
 - The colors on the website are inspired by a Forrest/Bamboo Palette created on [Coolors.co](https://coolors.co/) with multiple shades of greens to inspire a natural vibe in the user.
 
-![](./assets/docs/color-palette.png)
+    ![](./assets/docs/color-palette.png)
 
 ## Wireframes
 
@@ -201,15 +204,15 @@ I have used several technologies that have enabled this design to work:
 
 - JSHint
   - No errors were found on the website when using [JSHint Validator](https://jshint.com/install/).
-  ![](./assets/docs/jshint.png)
+    ![](./assets/docs/jshint.png)
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
   - Lighthouse is a feature of Google Chrome developer tools and is used to assess the performance of the website and its features. I achieved a  good performance, assessibility, best practises and SEO scores, as you can see on this [report](./assets/docs/lighthouse.pdf).
-  ![](./assets/docs/lighthouseimg.png)
+    ![](./assets/docs/lighthouseimg.png)
 
 - [Color Contrast Accessibility Validator](https://color.a11y.com/)
   - Allowed me to test the colour contrast of my webpage.
-  ![](./assets/docs/contrast.png)
+    ![](./assets/docs/contrast.png)
 
 
 ## Test cases
