@@ -64,10 +64,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     })
 });
 
-
-
-// Main game functions
-
 /**
  * This function request an animation frame to update the game every second
  */
@@ -76,10 +72,6 @@ function main(currentTime) {
         gameBoard.style.display = "none"
         controlBtns.style.display = "none"
         gameOverMessage.style.display = "block"
-        // if (confirm('GAME OVER! Press ok to try again.')) {
-        //     window.location = './index.html'
-        // }
-        // return
     }
 
     //getting the frame to animate the game
@@ -122,12 +114,12 @@ function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
 
-//Function to Restart the game
+/**
+ * Function to Restart the game
+ */
 function restart(){
     window.location = './index.html'
 }
-
-// Functions for the snake
 
 /**
  * updates the position of the snake and the directions to move
@@ -222,18 +214,14 @@ function addSegments() {
     newSegments = 0
 }
 
-// User input and controls
-
-//Listen to the user input with the arrow keys on the keyboard
-
-
-//get the user input and change direction of the snake
+/**
+ * Listen to the user input with the arrow keys on the keyboard
+ *  and get the user input and change direction of the snake
+ */
 function getInputDirection() {
     lastInputDirection = inputDirection
     return inputDirection
 }
-
-// Functions for the snake's food
 
 /**
  * Update the snake and score based on the expansion rate and get a new position for the food 
@@ -270,9 +258,6 @@ function getRandomFoodPosition() {
     return newFoodPosition
 }
 
-// Functions to create a random position for the food
-//size of the game
-
 /**
  * Gives a random position inside the grid
  */
@@ -292,8 +277,10 @@ function outsideGrid(position) {
     )
 }
 
-//Touch Controls functions
 
+/**
+ * Get the attribute for the on-screen buttons
+ */
 function touchControlsClicked() {
     if (this.getAttribute("id") === "btn-left") {
         if(lastInputDirection.x !== 0){
