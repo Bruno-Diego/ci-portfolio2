@@ -87,9 +87,9 @@ The footer contains icons for Facebook, Instagram, Github and LinkedIn, which li
 
 - As a **visitor**, I can intuitively navigate through the site so that I can view desired content.
 - As a **visitor**, I can easily find the title of the game and know what the game is about.
-- As a **visitor** I can find a navigation bar at the top and a footer at the bottom so that I can see what content there is on the website.
+- As a **visitor** I can find a title at the top and a footer at the bottom so that I can see what content there is on the website.
 - As a **visitor** I can find links at the footer that open to social media websites on a new tab.
-- As a **visitor** I can get key information about the website so that I can spend less time having to search for information including the instructions to play the game.
+- As a **visitor** I can get key information about the website and clear instructions to play the game.
 - As a **visitor** I can easily change the speed of the game choosing between Slow, Average and Fast speed.
 - As a **visitor** I can choose to use the keyboard to play the game or to use the on-screen buttons.
 - As a **visitor** I can contact the creator via e-mail with the contact form.
