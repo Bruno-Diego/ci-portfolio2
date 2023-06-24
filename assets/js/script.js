@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         touchControls[i].addEventListener('click', touchControlsClicked);
     }
     window.addEventListener('keydown', e => {
+        e.preventDefault()
         switch (e.key) {
             case 'ArrowUp':
                 if (lastInputDirection.y !== 0) break
